@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/11/03 17:06:19.417,=C:\Users\rotog\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/11/03 17:08:25.846,C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\server\uServidor.pas=C:\Users\rotog\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/11/03 17:08:25.846,C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\server\uServidor.dfm=C:\Users\rotog\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/11/03 17:08:36.715,C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\server\PServidor.dproj=C:\Users\rotog\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/11/03 17:15:57.594,=C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\server\Unit1.pas</Transaction>
+    <Transaction>2022/11/03 17:16:25.619,C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\server\uClasseServidor.pas=C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\server\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
