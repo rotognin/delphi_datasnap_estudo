@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Data.DBXDataSnap, Data.DBXCommon,
-  IPPeerClient, Data.DB, Data.SqlExpr;
+  IPPeerClient, Data.DB, Data.SqlExpr, uConexao;
 
 type
   TfCliente = class(TForm)
@@ -16,9 +16,20 @@ type
     btnExecutar: TButton;
     Label3: TLabel;
     lblResultado: TLabel;
+    Label4: TLabel;
+    edtNumero1: TEdit;
+    edtNumero2: TEdit;
+    Label5: TLabel;
+    btnSomar: TButton;
+    lblNumero: TLabel;
+    memTexto: TMemo;
+    btnBuscarTxt: TButton;
     procedure btnExecutarClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure ConectarServidor;
+    procedure btnSomarClick(Sender: TObject);
+    function ObterConexao: TUClasseServidorClient;
+    procedure btnBuscarTxtClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,7 +43,22 @@ implementation
 
 {$R *.dfm}
 
-uses uConexao;
+procedure TfCliente.btnBuscarTxtClick(Sender: TObject);
+var objConn: TUClasseServidorClient;
+begin
+  memTexto.Lines.Clear;
+
+  ConectarServidor;
+  objConn := ObterConexao;
+
+  try
+    memTexto.Text := objConn.buscarTexto;
+  finally
+    objConn.Free;
+  end;
+
+
+end;
 
 procedure TfCliente.btnExecutarClick(Sender: TObject);
 var objConn: TUClasseServidorClient;
@@ -48,7 +74,7 @@ begin
 
   // Instanciar a classe que irá conectar com o servidor
   ConectarServidor;
-  objConn := TUClasseServidorClient.Create(SQLConnection.DBXConnection);
+  objConn := ObterConexao;
 
   try
     lblResultado.Caption := objConn.mostrarTexto(edtTexto.Text);
@@ -61,6 +87,40 @@ procedure TfCliente.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   if (SQLConnection.Connected) then
     SQLConnection.Close;
+end;
+
+function TfCliente.ObterConexao: TUClasseServidorClient;
+begin
+  Result := TUClasseServidorClient.Create(SQLConnection.DBXConnection);
+end;
+
+procedure TfCliente.btnSomarClick(Sender: TObject);
+var objConn: TUClasseServidorClient;
+begin
+  if (edtNumero1.Text = EmptyStr) or (edtNumero2.Text = EmptyStr) then
+  begin
+    ShowMessage('É necessário informar os dois números.');
+    edtNumero1.SetFocus;
+    Exit;
+  end;
+
+  if (StrToIntDef(edtNumero1.Text, 0) = 0) or (StrToIntDef(edtNumero2.Text, 0) = 0) then
+  begin
+    ShowMessage('Favor informar números maiores que 0');
+    edtNumero1.SetFocus;
+    Exit;
+  end;
+
+  lblNumero.Caption := EmptyStr;
+
+  ConectarServidor;
+  objConn := ObterConexao;
+
+  try
+    lblNumero.Caption := IntToStr(objConn.somarNumeros(StrToInt(edtNumero1.Text), StrToInt(edtNumero2.Text)));
+  finally
+    objConn.Free;
+  end;
 end;
 
 procedure TfCliente.ConectarServidor;

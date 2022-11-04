@@ -1,13 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2022/11/03 17:33:50.921,=C:\Users\rotog\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/11/03 17:35:00.029,C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\uCliente.pas=C:\Users\rotog\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/11/03 17:35:00.029,C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\uCliente.dfm=C:\Users\rotog\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2022/11/03 17:38:41.254,C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\PCliente.dproj=C:\Users\rotog\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>2022/11/03 17:48:48.538,=C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\Unit1.pas</Transaction>
-    <Transaction>2022/11/03 17:50:16.935,C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\uConexao.pas=C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\Unit1.pas</Transaction>
-    <Transaction>2022/11/03 18:07:07.965,=C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\New1.txt</Transaction>
-    <Transaction>2022/11/03 18:08:24.503,C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\docs\aula DataSnap.txt=C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\New1.txt</Transaction>
-  </Transactions>
+	<Transactions>
+    <Transaction>2022/11/03 17:33:50.000.921,=C:\Users\rotog\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/11/03 17:35:00.000.029,C:\Users\rotog\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\uCliente.pas</Transaction>
+    <Transaction>2022/11/03 17:35:00.000.029,C:\Users\rotog\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\uCliente.dfm</Transaction>
+    <Transaction>2022/11/03 17:38:41.000.254,C:\Users\rotog\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\PCliente.dproj</Transaction>
+    <Transaction>2022/11/03 17:48:48.000.538,=C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\Unit1.pas</Transaction>
+    <Transaction>2022/11/03 17:50:16.000.935,C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\Unit1.pas=C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\uConexao.pas</Transaction>
+    <Transaction>2022/11/03 18:07:07.000.965,=C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\New1.txt</Transaction>
+    <Transaction>2022/11/03 18:08:24.000.503,C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\client\New1.txt=C:\Rodrigo\Projetos\Delphi\DataSnap\projeto3\docs\aula DataSnap.txt</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="..\..\projeto3"/>
+    <File Path="..\docs"/>
+    <File Path="..\docs\aula DataSnap.txt"/>
+    <File Path="uCliente.pas"/>
+    <File Path="uCliente.dfm"/>
+    <File Path="uConexao.pas"/>
+  </ProjectSortOrder>
 </BorlandProject>

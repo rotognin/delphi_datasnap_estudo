@@ -2,8 +2,8 @@ object fCliente: TfCliente
   Left = 0
   Top = 0
   Caption = 'Cliente'
-  ClientHeight = 235
-  ClientWidth = 447
+  ClientHeight = 380
+  ClientWidth = 1012
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -44,7 +44,27 @@ object fCliente: TfCliente
   object lblResultado: TLabel
     Left = 94
     Top = 176
-    Width = 291
+    Width = 3
+    Height = 13
+  end
+  object Label4: TLabel
+    Left = 8
+    Top = 248
+    Width = 97
+    Height = 13
+    Caption = 'Digite dois n'#250'meros:'
+  end
+  object Label5: TLabel
+    Left = 53
+    Top = 328
+    Width = 52
+    Height = 13
+    Caption = 'Resultado:'
+  end
+  object lblNumero: TLabel
+    Left = 111
+    Top = 328
+    Width = 258
     Height = 13
   end
   object edtTexto: TEdit
@@ -62,6 +82,46 @@ object fCliente: TfCliente
     Caption = 'Executar'
     TabOrder = 1
     OnClick = btnExecutarClick
+  end
+  object edtNumero1: TEdit
+    Left = 111
+    Top = 245
+    Width = 58
+    Height = 21
+    TabOrder = 2
+  end
+  object edtNumero2: TEdit
+    Left = 175
+    Top = 245
+    Width = 58
+    Height = 21
+    TabOrder = 3
+  end
+  object btnSomar: TButton
+    Left = 111
+    Top = 272
+    Width = 102
+    Height = 25
+    Caption = 'Somar'
+    TabOrder = 4
+    OnClick = btnSomarClick
+  end
+  object memTexto: TMemo
+    Left = 440
+    Top = 93
+    Width = 564
+    Height = 188
+    ScrollBars = ssVertical
+    TabOrder = 5
+  end
+  object btnBuscarTxt: TButton
+    Left = 440
+    Top = 287
+    Width = 102
+    Height = 25
+    Caption = 'Buscar Texto'
+    TabOrder = 6
+    OnClick = btnBuscarTxtClick
   end
   object SQLConnection: TSQLConnection
     DriverName = 'DataSnap'

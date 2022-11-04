@@ -104,6 +104,11 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="uClasseServidor.pas"/>
+        <DCCReference Include="uDm.pas">
+            <Form>fDm</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
